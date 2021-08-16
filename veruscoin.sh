@@ -1,9 +1,10 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
-tar xf hellminer_cpu_linux.tar.gz
-./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u walletkalian.workename_bebas_saja -p x --cpu 2
+! wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.28/lolMiner_v1.28a_Lin64.tar.gz
+! tar -xf lolMiner_v1.28a_Lin64.tar.gz
+%cd 1.28a/
+!./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user TRX:TM7rs4NqATaft3TqCGmzzZoPEuhNvy4WCE.colab --ethstratum ETHPROXY
 while [ 1 ]; do
 sleep 3
 done
